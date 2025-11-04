@@ -4,7 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+h1{
+  color:#4a90e2;
+}
 /* Body Styling */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
