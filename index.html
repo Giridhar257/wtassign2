@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Student Registration Portal</h1>
+    <p>Fill in your details below to register</p>
+  </header>
+
+  <main>
+    <div class="form-card">
+      <form id="regForm" method="POST" action="process.php">
+
+        <div class="input-group">
+          <label>Full Name</label>
+          <input type="text" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="input-group">
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+          <label>Phone Number</label>
+          <input type="tel" name="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="input-group">
+          <label>Gender</label>
+          <div class="gender-options">
+            <label><input type="radio" name="gender" value="Male" required> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+            <label><input type="radio" name="gender" value="Other"> Other</label>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="department">Department</label>
+          <select name="department" id="department" required>
+            <option value="">Select Department</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Mechanical">Mechanical</option>
+            <option value="Civil">Civil</option>
+          </select>
+        </div>
+
+        <button type="submit" id="submitBtn">Register Now</button>
+      </form>
+
+      <div id="response" class="response-box"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Student Registration Portal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ 
