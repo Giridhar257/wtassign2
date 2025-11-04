@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $dept = htmlspecialchars($_POST["department"]);
 
     echo "
-    <h3 style='color:#357abd;'>🎉 Registration Successful!</h3>
+    <h3 style='color:#357abd;'>Registration Successful!</h3>
     <p><strong>Full Name:</strong> $name</p>
     <p><strong>Email:</strong> $email</p>
     <p><strong>Phone:</strong> $phone</p>
